@@ -15,4 +15,6 @@ export PATH=${PATH}:$BREW_HOME:$MYSQL_HOME:$GRADLE_HOME/bin
 5. (venv) user@AL01978827 study_fast_aws_backends % pip install -r requirements.txt
 6. (venv) user@AL01978827 study_fast_aws_backends % python3 manage.py runserver
 
+7. localhost:8000/order/order
+
 
