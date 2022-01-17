@@ -80,12 +80,21 @@ WSGI_APPLICATION = 'fastcampus.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3'
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3'
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'project1',
+        'USER': 'admin',
+        'PASSWORD': 'chltmdghks1!',
+        'HOST': 'database-1.c0auch6gmb2q.us-east-1.rds.amazonaws.com',
+        'PORT': '3306',
+        'OPTIONS':{
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
     }
 }
 # 데이터베이스 이름 : project1
-# 비밀번호 : songggi111!
+# 비밀번호 : chltmdghks1!
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
